@@ -1,0 +1,244 @@
+/* 
+    Created on : 06-Dec-2016, 10:16:17
+    Author     : silas
+
+    I'll re-arrange this in more logical order and comment fully as we go.
+*/
+
+/* custom font */
+@font-face {
+    font-family: "alegreya_sansregular";
+    src: url("../fonts/alegreyasans-regular-webfont.woff2") format('woff2'),
+         url("../fonts/alegreyasans-regular-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: alegreya_sansregular;
+}
+
+/* over-ride pure base font */
+.pure-g [class *= "pure-u"] {
+    font-family: alegreya_sansregular;
+}
+
+/*
+Header styles
+*/
+
+/* spacing */
+.header-wrapper{
+    margin-bottom:32px;
+}
+
+/* logo - scale png */
+.header-left img{
+    width: 72px;
+    margin-left:20px;
+}
+
+/*nav*/
+.header-right{
+    text-align:right;
+    font-size:11pt;
+    /*font-weight:bold;*/
+    padding-top:40px;
+}
+.header-right>span{
+    margin-right:20px;
+}
+.header-right>span>a{
+    color: #000;
+    text-decoration: none;
+}
+.header-right>span.active{
+    color: #999;
+}
+.header-right>span.active>a{
+    color: #999;
+}
+
+/* basic page layout */
+#body-content{
+   padding-left: 50px; 
+   padding-right: 50px;
+}
+#home-content{
+   padding-left: 50px; 
+   padding-right: 50px;
+}
+
+#body-content img{
+    width:100%;
+}
+#home-content img{
+    width:100%;
+}
+
+/* bigger margin for paragraph text:  */
+.content-text{
+   padding-left: 70px; 
+   padding-right: 70px;
+   text-align: center;
+}
+
+/*
+STATIC PORTFOLIO PANELS:
+*/
+
+/* Portfolio landing page */
+/*
+Set up the basic column layout.
+See http://stackoverflow.com/questions/16908958/css-3-column-liquid-layout-with-fixed-center-column
+for fluid/fixed/fluid columns
+*/
+/*#left-margin{
+    width: calc(50% - 210px);
+    float:left;
+}
+#right-margin{
+    width: calc(50% - 210px);
+    float:right;
+}
+#menu-panels-outer{
+    width:420px;
+    float:left;
+}*/
+
+
+/*
+definitions for each menu panel.
+*/
+/* The outer wrapper. Fixed size and margin */
+.menupanel{
+    width:200px;
+    height:200px;
+    margin:5px;
+    /*
+    Temporary. Need to talk to Elle about better images here
+    */
+    /*background-size: 200%;*/
+    /*background-position: 20%*/
+    background-size:contain;
+}
+
+/* 
+the onhover overlay.
+See http://stackoverflow.com/questions/9249359/is-it-possible-to-vertically-align-text-within-a-div
+for how the alignment is done:
+*/
+.menu-overlay{
+    /*line-height: 200px;*/
+    /* use rgba() to ensure that text is not translucent as well. See e.g. http://stackoverflow.com/questions/10835500/how-to-change-text-transparency-in-html-css */
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    height:100%;
+    width:100%;
+    /*opacity: 0.5;*/
+    /*text-align: center;*/
+    display:none;  /* because we don't want the overlay showing on page load. The switch is controller by the jquery mouseover handler */
+}
+.menu-overlay>span{
+    display:inline-block;
+    vertical-align: middle;
+    line-height: 18px;
+    text-align:left;
+    padding-left:15px;
+}
+
+/* to over-ride the default display of link text as blue and underlined */
+.menu-overlay>span>a{
+    color:#fff;
+    text-decoration: none;
+}
+
+/*
+END STATIC PORTFOLIO PANELS:
+*/
+
+
+/*
+FLUID PORTFOLIO PANELS:
+*/
+.linkblock{
+    padding:5px;
+    height:100%;
+    background-size: contain;
+    position:relative;
+}
+.linkblock>a>img{
+    width:100%;
+}
+
+
+/*
+END FLUID PORTFOLIO PANELS:
+*/
+
+
+/* footer */
+div.footer{
+    padding-top:50px;
+    text-align: center;
+    
+    /*
+    see https://developer.mozilla.org/en/docs/Web/CSS/clear
+    For the simple content pages, not needed, but for the footer on the portfolio
+    page (3 columns) this is needed to prevent the menu from floating right.
+    */
+    clear:both;
+}
+div.footer .email{
+    font-size:28pt;
+    color:#999;
+}
+
+div.footer .social img{
+    width:26px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+/*
+'Media Queries' allow different CSS styles to be applied at different screen widths.
+Here, I indicate that the left/right margins and the central column width should be 
+re-calculated at 567px and smaller. This complements the corresponding media queries
+provided by the Pure framework.
+
+Essentially, these re-define a given CSS class but only at the specified screen size
+*/
+@media screen and (max-width: 567px) {
+    #left-margin{
+        width: calc(50% - 105px);
+    }
+    #right-margin{
+        width: calc(50% - 105px);
+    }
+    #menu-panels-outer{
+        width:210px;
+    }
+    
+    /* basic page layout - narrower width on mobile */
+    #body-content{
+       padding-left: 10px; 
+       padding-right: 10px;
+    }
+    #home-content{
+       padding-left: 10px; 
+       padding-right: 10px;
+    }
+    
+    /* smaller margin for paragraph text on mobile:  */
+    .content-text{
+       padding-left: 10px; 
+       padding-right: 10px;
+    }
+    
+    
+    /* footer */
+    div.footer .email{
+        font-size:22pt;
+    }
+    
+}

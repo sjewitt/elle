@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.web.clientproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/clientside-project/1">
+            <name>Elle</name>
+        </data>
+        <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1">
+            <library name="jquery" version="3.1.1">
+                <file localPath="public_html/js/libs/jquery/core.js" path="core.js"/>
+                <file localPath="public_html/js/libs/jquery/jquery.js" path="jquery.js"/>
+                <file localPath="public_html/js/libs/jquery/jquery.min.js" path="jquery.min.js"/>
+                <file localPath="public_html/js/libs/jquery/jquery.min.map" path="jquery.min.map"/>
+                <file localPath="public_html/js/libs/jquery/jquery.slim.js" path="jquery.slim.js"/>
+                <file localPath="public_html/js/libs/jquery/jquery.slim.min.js" path="jquery.slim.min.js"/>
+                <file localPath="public_html/js/libs/jquery/jquery.slim.min.map" path="jquery.slim.min.map"/>
+            </library>
+            <library name="normalize" version="5.0.0">
+                <file localPath="public_html/js/libs/normalize/normalize.css" path="normalize.css"/>
+                <file localPath="public_html/js/libs/normalize/normalize.min.css" path="normalize.min.css"/>
+                <file localPath="public_html/js/libs/normalize/normalize.min.css.map" path="normalize.min.css.map"/>
+            </library>
+            <library name="pure" version="0.6.0">
+                <file localPath="public_html/js/libs/pure/base-context-min.css" path="base-context-min.css"/>
+                <file localPath="public_html/js/libs/pure/base-context.css" path="base-context.css"/>
+                <file localPath="public_html/js/libs/pure/base-min.css" path="base-min.css"/>
+                <file localPath="public_html/js/libs/pure/base.css" path="base.css"/>
+                <file localPath="public_html/js/libs/pure/buttons-core-min.css" path="buttons-core-min.css"/>
+                <file localPath="public_html/js/libs/pure/buttons-core.css" path="buttons-core.css"/>
+                <file localPath="public_html/js/libs/pure/buttons-min.css" path="buttons-min.css"/>
+                <file localPath="public_html/js/libs/pure/buttons.css" path="buttons.css"/>
+                <file localPath="public_html/js/libs/pure/forms-min.css" path="forms-min.css"/>
+                <file localPath="public_html/js/libs/pure/forms-nr-min.css" path="forms-nr-min.css"/>
+                <file localPath="public_html/js/libs/pure/forms-nr.css" path="forms-nr.css"/>
+                <file localPath="public_html/js/libs/pure/forms.css" path="forms.css"/>
+                <file localPath="public_html/js/libs/pure/grids-core-min.css" path="grids-core-min.css"/>
+                <file localPath="public_html/js/libs/pure/grids-core.css" path="grids-core.css"/>
+                <file localPath="public_html/js/libs/pure/grids-min.css" path="grids-min.css"/>
+                <file localPath="public_html/js/libs/pure/grids-responsive-min.css" path="grids-responsive-min.css"/>
+                <file localPath="public_html/js/libs/pure/grids-responsive-old-ie-min.css" path="grids-responsive-old-ie-min.css"/>
+                <file localPath="public_html/js/libs/pure/grids-responsive-old-ie.css" path="grids-responsive-old-ie.css"/>
+                <file localPath="public_html/js/libs/pure/grids-responsive.css" path="grids-responsive.css"/>
+                <file localPath="public_html/js/libs/pure/grids-units-min.css" path="grids-units-min.css"/>
+                <file localPath="public_html/js/libs/pure/grids-units.css" path="grids-units.css"/>
+                <file localPath="public_html/js/libs/pure/grids.css" path="grids.css"/>
+                <file localPath="public_html/js/libs/pure/menus-core-min.css" path="menus-core-min.css"/>
+                <file localPath="public_html/js/libs/pure/menus-core.css" path="menus-core.css"/>
+                <file localPath="public_html/js/libs/pure/menus-dropdown-min.css" path="menus-dropdown-min.css"/>
+                <file localPath="public_html/js/libs/pure/menus-dropdown.css" path="menus-dropdown.css"/>
+                <file localPath="public_html/js/libs/pure/menus-horizontal-min.css" path="menus-horizontal-min.css"/>
+                <file localPath="public_html/js/libs/pure/menus-horizontal.css" path="menus-horizontal.css"/>
+                <file localPath="public_html/js/libs/pure/menus-min.css" path="menus-min.css"/>
+                <file localPath="public_html/js/libs/pure/menus-scrollable-min.css" path="menus-scrollable-min.css"/>
+                <file localPath="public_html/js/libs/pure/menus-scrollable.css" path="menus-scrollable.css"/>
+                <file localPath="public_html/js/libs/pure/menus-skin-min.css" path="menus-skin-min.css"/>
+                <file localPath="public_html/js/libs/pure/menus-skin.css" path="menus-skin.css"/>
+                <file localPath="public_html/js/libs/pure/menus.css" path="menus.css"/>
+                <file localPath="public_html/js/libs/pure/pure-min.css" path="pure-min.css"/>
+                <file localPath="public_html/js/libs/pure/pure-nr-min.css" path="pure-nr-min.css"/>
+                <file localPath="public_html/js/libs/pure/pure-nr.css" path="pure-nr.css"/>
+                <file localPath="public_html/js/libs/pure/pure.css" path="pure.css"/>
+                <file localPath="public_html/js/libs/pure/tables-min.css" path="tables-min.css"/>
+                <file localPath="public_html/js/libs/pure/tables.css" path="tables.css"/>
+            </library>
+        </libraries>
+    </configuration>
+</project>
